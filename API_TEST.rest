@@ -1,0 +1,9 @@
+@baseUrl = http://127.0.0.1:8000/api/
+
+###
+GET {{baseUrl}}registered-habits
+Content-Type: application/json
+
+###
+POST {{baseUrl}}registered-habits?habit_id=1
+Content-Type: application/json
