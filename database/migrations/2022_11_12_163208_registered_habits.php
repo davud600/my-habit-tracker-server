@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('registered_habits', function (Blueprint $table) {
             $table->id();
             $table->foreignId('habit_id');
+            $table->string('date');
             $table->timestamps();
             $table->softDeletes();
         });

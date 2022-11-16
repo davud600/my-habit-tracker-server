@@ -22,6 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::controller(RegisteredHabitController::class)
     ->prefix('registered-habits')->group(function () {
         Route::get('', 'index');
+        Route::get('get-registered-habits-of-date', 'getRegisteredHabitsOfDate');
+        Route::get('get-registered-habit-by-habit-and-date/{habit_id}/{date}', 'getRegisteredHabitByDateAndHabit');
         Route::get('{registeredHabit}', 'show');
         Route::post('', 'store');
         Route::put('{registeredHabit}', 'update');

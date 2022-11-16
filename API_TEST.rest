@@ -1,9 +1,18 @@
 @baseUrl = http://127.0.0.1:8000/api/
 
 ###
-GET {{baseUrl}}registered-habits
+GET {{baseUrl}}registered-habits?date=0
 Content-Type: application/json
 
 ###
-POST {{baseUrl}}registered-habits?habit_id=1
+POST {{baseUrl}}registered-habits
+Content-Type: application/json
+
+{
+    "habit_id": "2",
+    "date": "2022-11-16Z"
+}
+
+###
+DELETE {{baseUrl}}registered-habits/6
 Content-Type: application/json

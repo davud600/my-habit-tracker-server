@@ -12,6 +12,7 @@ class RegisteredHabit extends Model
 
     protected $fillable = [
         'habit_id',
+        'date'
     ];
 
     protected $with = [
