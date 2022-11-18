@@ -16,3 +16,7 @@ Content-Type: application/json
 ###
 DELETE {{baseUrl}}registered-habits/6
 Content-Type: application/json
+
+###
+GET {{baseUrl}}habits
+Content-Type: application/json

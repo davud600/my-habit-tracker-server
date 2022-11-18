@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HabitController;
 use App\Http\Controllers\RegisteredHabitController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -28,5 +29,11 @@ Route::controller(RegisteredHabitController::class)
         Route::post('', 'store');
         Route::put('{registeredHabit}', 'update');
         Route::delete('{registeredHabit}', 'destroy');
+    }
+);
+
+Route::controller(HabitController::class)
+    ->prefix('habits')->group(function () {
+        Route::get('', 'index');
     }
 );
