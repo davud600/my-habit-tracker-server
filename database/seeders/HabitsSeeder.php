@@ -16,17 +16,17 @@ class HabitsSeeder extends Seeder
     {
         Habit::create([
             'id' => 1,
-            'name' => 'Read (10 pages)'
+            'name' => 'Read'
         ]);
 
         Habit::create([
             'id' => 2,
-            'name' => 'Meditate (10 min)'
+            'name' => 'Meditate'
         ]);
 
         Habit::create([
             'id' => 3,
-            'name' => 'Study (2 hours)'
+            'name' => 'Study'
         ]);
 
         Habit::create([
